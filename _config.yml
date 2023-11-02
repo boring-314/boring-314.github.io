@@ -105,3 +105,25 @@ deploy:
   type: git
   repository: git@github.com:boring-314/boring-314.github.io.git
   branch: main
+
+giscus:
+  enable: true
+  repo: boring-314/boring-314.github.io
+  repo_id: R_kgDOKoT3IA
+  category: General
+  category_id: DIC_kwDOKoT3IM4Cao_B
+  # Available values: pathname | url | title | og:title
+  mapping: title
+  # Available values: 0 | 1
+  reactions_enabled: 1
+   # Available values: 0 | 1
+  emit_metadata: 0
+  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme
+  theme: light
+  # Available values: en | zh-CN
+  lang: zh-CN
+  # Place the comment box above the comments
+  input_position: top
+  # Load the comments lazily
+  loading: lazy
+  cdn: https://giscus.app/client.js
