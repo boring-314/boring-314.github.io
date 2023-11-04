@@ -35,7 +35,7 @@ updated: 2023-11-4T22:39:32.602+8:0
 
 $$
 \begin{aligned}
-f_i=\sum_{j=1}^{|s_i|}\sum_{k=1}^{i-1}&\underbrace{[\underset{\text{左半部分长度}}{|s_k|+(j-1)}=\underset{\text{右半部分长度}}{|s_i|-j+1}\land \underset{\text{左半部分总和}}{suf_{k,1}+pre_{i,j-1}}= \underset{\text{右半部分总和}}{suf_{i,j}}]}_{{(k,i)\text{ 形式的二元组的贡献}}}\\&+\underbrace{[\underset{\text{右半部分长度}}{|s_k|+(|s_i|-j)}=\underset{\text{左半部分长度}}{j}\land \underset{\text{右半部分总和}}{suf_{k,1}+suf_{i,j+1}}=\underset{\text{左半部分总和}}{pre_{i,j}}]}_{(i,k)\text{ 形式的二元组的贡献}}
+f_i=\sum_{j=1}^{|s_i|}\sum_{k=1}^{i-1}&\underbrace{[\underset{\text{左半部分长度}}{|s_k|+(j-1)}=\underset{\text{右半部分长度}}{|s_i|-j+1}\land \underset{\text{左半部分总和}}{suf_{k,1}+pre_{i,j-1}}= \underset{\text{右半部分总和}}{suf_{i,j}}]}_{{(k,i)  \text{ 形式的二元组的贡献}}}\\&+\underbrace{[\underset{\text{右半部分长度}}{|s_k|+(|s_i|-j)}=\underset{\text{左半部分长度}}{j}\land \underset{\text{右半部分总和}}{suf_{k,1}+suf_{i,j+1}}=\underset{\text{左半部分总和}}{pre_{i,j}}]}_{(i,k)  \text{ 形式的二元组的贡献}}
 \end{aligned}
 $$
 
