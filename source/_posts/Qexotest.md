@@ -1,4 +1,0 @@
----
-title: Qexotest
----
-Qexotest
