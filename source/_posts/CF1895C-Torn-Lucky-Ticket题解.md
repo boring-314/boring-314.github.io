@@ -8,8 +8,8 @@ tags:
 - 学术
 - OI
 - Codeforces
-title: CF1895C-Torn-Lucky-Ticket题解
-updated: 2023-11-4T18:59:31.526+8:0
+title: CF1895C-Torn-Lucky-Ticket-Solution
+updated: 2023-11-4T19:1:33.211+8:0
 ---
 # Torn Lucky Ticket
 
