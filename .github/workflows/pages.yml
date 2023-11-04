@@ -27,7 +27,10 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
-        run: npm install
+        run: |
+            sudo dpkg -i pandoc.deb
+            npm install hexo-renderer-pandoc --save
+            npm install
       - name: Build
         run: sudo npm run build
       - name: Upload Pages artifact
