@@ -4,7 +4,7 @@ categories: []
 date: '2023-11-04T22:38:40.772282+08:00'
 tags: []
 title: CF1895C-Torn-Lucky-Ticket-Solution
-updated: 2023-11-4T22:38:41.184+8:0
+updated: 2023-11-4T22:39:32.602+8:0
 ---
 # Torn Lucky Ticket
 
@@ -35,9 +35,11 @@ updated: 2023-11-4T22:38:41.184+8:0
 
 $$
 \begin{aligned}
-f_i=\sum_{j=1}^{|s_i|}\sum_{k=1}^{i-1}&\underbrace{[\underset{\text{左半部分长度}}{|s_k|+(j-1)}=\underset{\text{右半部分长度}}{|s_i|-j+1}\land \underset{\text{左半部分总和}}{suf_{k,1}+pre_{i,j-1}}= \underset{\text{右半部分总和}}{{suf}_{i,j}}]}_{{(k,i)\text{ 形式的二元组的贡献}}}\\&+\underbrace{[\underset{\text{右半部分长度}}{|s_k|+(|s_i|-j)}=\underset{\text{左半部分长度}}{j}\land \underset{\text{右半部分总和}}{suf_{k,1}+suf_{i,j+1}}=\underset{\text{左半部分总和}}{pre_{i,j}}]}_{(i,k)\text{ 形式的二元组的贡献}}
+f_i=\sum_{j=1}^{|s_i|}\sum_{k=1}^{i-1}&\underbrace{[\underset{\text{左半部分长度}}{|s_k|+(j-1)}=\underset{\text{右半部分长度}}{|s_i|-j+1}\land \underset{\text{左半部分总和}}{suf_{k,1}+pre_{i,j-1}}= \underset{\text{右半部分总和}}{suf_{i,j}}]}_{{(k,i)\text{ 形式的二元组的贡献}}}\\&+\underbrace{[\underset{\text{右半部分长度}}{|s_k|+(|s_i|-j)}=\underset{\text{左半部分长度}}{j}\land \underset{\text{右半部分总和}}{suf_{k,1}+suf_{i,j+1}}=\underset{\text{左半部分总和}}{pre_{i,j}}]}_{(i,k)\text{ 形式的二元组的贡献}}
 \end{aligned}
 $$
+
+
 
 最里层求和的意思就是满足 $(k,i)$ 的 $k$ 的个数与满足 $(i,k)$ 的 $k$ 的个数的总和。直接这么找是 $O(5n^2)=O(n^2)$ 的，显然无法通过，考虑优化掉最里面的那层循环。我们把式子中间的那两个条件整理成成对 $k$ 的限制，就是：
 
@@ -118,3 +120,4 @@ signed main(){
     return 0;
 }
 ```
+
