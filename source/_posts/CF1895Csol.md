@@ -1,3 +1,8 @@
+---
+title: CF1895Csol
+date: 2023-11-02 23:42:07
+tags:
+---
 # Torn Lucky Ticket
 
 ## 约定
